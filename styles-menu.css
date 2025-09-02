@@ -369,7 +369,7 @@ nav a:hover {
   }
   .box-photo img,
   .box-photo {
-    height: 120px;
+    height: 300px;
   }
   .price-row { gap: 8px; }
   .box-body h3 { font-size: 1.15rem; }
@@ -412,3 +412,4 @@ nav a:hover {
 .site-footer a:hover {
   color: #ffe6f0;
 }
+
