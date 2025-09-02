@@ -1,0 +1,347 @@
+* { word-wrap: break-word; overflow-wrap: anywhere; }
+
+img { max-width: 100%; height: auto; }
+
+.hero-img{
+  max-width: none;  /* keeps your original size */
+  height: 400px;     /* or keep your set height if you prefer */
+}
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Logo + Site Name */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.header-top h1 {
+  font-family: 'Cursive', sans-serif;
+  font-size: 2.4rem;
+  color: #ff69b4;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff4d94;
+  background: #fff0f5;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255,105,180,0.1);
+}
+
+nav a:hover {
+  background: #ff69b4;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255,105,180,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+  }
+
+  .header-top h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  nav a {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+.container {
+  text-align: center; /* Centers everything inside */ 
+  margin-top: 20px; /* Space from header */
+}
+.announcement{ 
+  background:#ffe6f0;
+  border-bottom:1px solid #ffd1e0;
+  text-align:center;
+  padding:8px 12px;
+  font-size:0.95rem;
+  color:#333;
+  margin-top: 50px; 
+}
+.first{ 
+  position: absolute;
+  bottom: 55px;
+  left: 570px;
+  display: inline-block;
+  background: #ffedf5;
+  border: 1px solid #ffcadf;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fb9ef0;   
+}
+h2{
+  font-family: 'Cursive', sans-serif;
+  color: #ff69b4; /* pink title */
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+} 
+.introduction {
+  background-color: #fff0f5; /* soft pink */
+  border-radius: 25px;
+  padding: 50px 30px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.introduction h2 {
+  font-family: 'Cursive', sans-serif;
+  color: #ff69b4;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+.introduction p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #555;
+  font-family: 'Segoe UI', sans-serif;
+}
+.gallery {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff0f5; /* very soft pink background */
+}
+.gallery h2 {
+  font-family: 'Cursive', sans-serif;
+  color: #ff69b4; /* pink title */
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+} 
+.gallery-item { 
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+} 
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 192, 203, 0.7); /* soft pink overlay */ 
+  color: #fff;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+} 
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+.why-choose-us {
+  background-color: #fff0f5;
+  text-align: center;
+  padding: 60px 20px; 
+} 
+.why-choose-us h2 {
+  font-family: 'Cursive', sans-serif;
+  color: #ff69b4;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+} 
+.why-choose-us p {
+  font-size: 1.2rem; 
+  color: #555;
+  margin-bottom: 50px;
+  }
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto; 
+} 
+.highlight-card {
+  background-color: #fff;
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}  
+.highlight-card:hover { 
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+} 
+.highlight-card .icon {
+   font-size: 2rem;
+    display: block;
+     margin-bottom: 15px;
+     }
+.highlight-card h3 {
+  font-family: 'Cursive', sans-serif;
+  color: #ff69b4;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+} 
+.highlight-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+} 
+.closing {
+  background-color: #ffe6f0;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: 'Cursive', sans-serif;
+  color: #ff69b4;
+  font-size: 1.5rem;
+}
+.contact-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #ff69b4;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: 'Cursive', sans-serif;
+  border: none;
+  border-radius: 30px; 
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+ }
+  .contact-button:hover {
+     background-color: #ff85c1;
+      transform: translateY(-3px); 
+    } 
+.site-footer {
+  background-color: #ff69b4;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: sans-serif;
+} 
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+.site-footer a:hover {
+  color: #ffe6f0;
+}
+/* ===== Mobile safety net (phones) ===== */
+@media (max-width: 600px) {
+
+  /* Header: keep your absolute title, but center it on small screens */
+  header h1 {
+    position: absolute;     /* keep your style */
+    left: 50%;              /* center horizontally */
+    transform: translateX(-50%);
+    font-size: 1.6rem;      /* smaller so it fits */
+    margin: 0;
+  }
+
+  /* Logo a bit smaller */
+  #logo { width: 100px; height: auto; }
+
+  /* Nav: allow wrapping so links don’t overflow */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  nav a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Hero image fills screen width */
+  .container img { width: 100%; height: auto; }
+
+  /* Your pink pill text (.first): don’t keep it fixed over the image on phones */
+  .first {
+    position: static;           /* stop absolute on mobile */
+    display: inline-block;
+    margin: 10px auto 0;
+    font-size: 0.95rem;
+    transform: none;
+    left: auto;
+    top: auto;
+  }
+
+  /* Intro text easier to read on small screens */
+  .introduction { padding: 20px; }
+  .introduction p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Gallery: one column so images don’t get tiny */
+  .gallery-grid { grid-template-columns: 1fr; gap: 16px; }
+
+  /* Cards: a bit tighter spacing */
+  .highlight-card { padding: 16px; }
+
+  /* Buttons: comfortable tap size */
+  .contact-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
