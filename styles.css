@@ -105,7 +105,7 @@ nav a:hover {
 }
 .first{ 
   position: absolute;
-  bottom: 55px;
+  bottom: 85px;
   left: 570px;
   display: inline-block;
   background: #ffedf5;
@@ -344,4 +344,5 @@ h2{
     font-size: 1rem;
   }
 }
+
 
